@@ -1,0 +1,16 @@
+.home-card-container{
+    flex: 1;
+    padding: 2.5rem;
+    img {
+      width: 10rem;
+      padding: 1rem;
+      border: 0.5rem solid #00bc77;
+      border-radius: 50%;
+    }
+    h3 {
+      margin: 1.25rem 0 0.5rem 0;
+      color: #005834;
+      font-size: 1.25rem;
+      font-weight: 700;
+    }
+}

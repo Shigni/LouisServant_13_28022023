@@ -1,0 +1,42 @@
+.header-container {
+    margin: 0;
+}
+
+
+.main-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  padding: 0 2rem;
+  @media screen and (max-width: 425px){
+  padding: 0;
+}
+}
+
+.main-navList {
+  display: flex;
+  padding: 0.25rem 1rem;
+  li {
+    margin: 0 0.5rem;
+  }
+  li i {
+    margin: 0 0.5rem 0 0;
+  }
+}
+
+.header-link {
+  color: #2c3e50;
+  font-weight: 700;
+  text-decoration: none;
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.LogoBox{
+  width: 12.5rem;
+  img {
+    width: 100%;
+  }
+}

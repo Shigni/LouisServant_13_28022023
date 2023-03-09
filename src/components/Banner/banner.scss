@@ -1,0 +1,45 @@
+.banner-container { 
+    height: 26rem;
+    background: #2c3e50 url("../../assets/bank-tree.jpeg") 0 no-repeat;
+    background-size: cover;
+    @media screen and (max-width: 1024px){
+      background: #2c3e50 url("../../assets/bank-tree.jpeg") 0 no-repeat center;
+  }
+  @media screen and (max-width: 768px){
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+}
+
+.card-container {
+    position: relative;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+.banner-card { 
+    width: 22.5rem;
+    padding: 2rem;
+    text-align: left;
+    background: white;
+    h3 {
+      margin: 0 0 0.5rem 0;
+      font-size: 1.5rem;
+      font-weight: 700;
+    }
+    p {
+      margin: 1.25rem 0 0 0;
+      font-size: 1.25rem;
+    } 
+    @media screen and (min-width: 768px){
+      position: absolute;
+      top: 6rem;
+      right: 6rem;
+  }
+  @media screen and (max-width: 425px){
+    width: 90%;
+    padding: 1rem;
+    margin: 0;
+}
+}
