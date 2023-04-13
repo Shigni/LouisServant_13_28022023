@@ -1,0 +1,24 @@
+.LabeledInput {
+  display: flex;
+  flex-direction: column;
+  margin: 0 0 1.5rem 0;
+  text-align: left;
+  label {
+    margin: 0 0 0.25rem 0;
+    font-size: 1.1rem;
+    font-weight: 700;
+  }
+  input {
+    padding: 0.5rem;
+    border: 1px solid #222;
+    border-radius: 0.25rem;
+    font-size: 1.2rem;
+  }
+}
+
+.LabeledCheckbox{
+  display: flex;
+  label {
+    margin: 0 0 0 0.5rem;
+  }
+}
