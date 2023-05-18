@@ -12,6 +12,7 @@ export function Header() {
   const logout = () => {
     dispatch(setEmail(''));
     dispatch(setToken(''));
+    localStorage.clear();
   };
 
   return (
@@ -31,7 +32,7 @@ export function Header() {
 
             {token ? (
               <Link className="header-link" to="/profile">
-                [ USER NAME ]
+                Profile
               </Link>
             ) : (
               <Link className="header-link" to="/login">
@@ -42,9 +43,8 @@ export function Header() {
 
           {token ? (
             <li>
-              <i className="fas fa-sign-out-alt"></i>
-
               <Link className="header-link" to="/" onClick={logout}>
+                <i className="fa fa-sign-out"></i>
                 Sign Out
               </Link>
             </li>

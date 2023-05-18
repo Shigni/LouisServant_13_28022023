@@ -1,0 +1,30 @@
+.userProfileMain{
+  padding: 2rem 3rem;
+  background: #12002b;
+  min-height: 84vh;
+  h2,
+  .name {
+    margin: 0;
+    color: white;
+    font-size: 2rem;
+    font-weight: 700;
+  }
+  .name {
+    margin: 0 0 1.5rem 0;
+  }
+  article button {
+    margin: 1.5rem auto;
+  }
+}
+
+.userProfileContainer{
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.editionContainer {
+  margin: 0 0 2.5rem 0;
+  .btn--edit {
+    margin: auto;
+  }
+}

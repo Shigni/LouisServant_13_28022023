@@ -1,0 +1,19 @@
+.loginMain {
+  padding: 3rem;
+  background: #12002b;
+  min-height: 84vh;
+}
+.loginFormContainer{
+  width: 20rem;
+  margin: 0 auto;
+  padding: 2rem;
+  border-radius: 0.25rem;
+  background: white;
+  i {
+    color: #222;
+    font-size: 5rem;
+  }
+  @media screen and (max-width: 425px){
+    width: 100%;
+}
+}

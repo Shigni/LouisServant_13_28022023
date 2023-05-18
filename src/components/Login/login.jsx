@@ -34,15 +34,6 @@ export function LoginForm() {
     setFormIsSubmited(true);
   };
 
-  console.log(
-    'userInputs =',
-    userInputs,
-    '| formIsSubmited',
-    formIsSubmited,
-    '| submitError =',
-    submitError
-  );
-
   useEffect(() => {
     if (formIsSubmited) {
       const url = 'http://localhost:3001/api/v1/user/login';
@@ -60,13 +51,12 @@ export function LoginForm() {
         },
       };
 
-      // Send POST request:
       fetch(url, requestOptions)
         .then((response) => response.json())
         .then((json) => {
           dispatch(setEmail(userInputs.email));
           dispatch(setToken(json.body.token));
-
+          localStorage.setItem('token', json.body.token);
           console.log('/user/login response to POST:', json);
         })
         .catch((error) => {
@@ -90,7 +80,7 @@ export function LoginForm() {
   return (
     <form onSubmit={handleLoginFormSubmit}>
       <div className="LabeledInput">
-        <label htmlFor="email">E-mail</label>
+        <label htmlFor="email">username</label>
         <input type="email" id="email" onChange={handleInputChange} />
       </div>
 
